@@ -1,0 +1,112 @@
+[
+    {
+        "model":"mywatchlist.watchlist",
+        "pk":1,
+        "fields":{
+            "watched":"Yes",
+            "title":"Top Gun: Maverick",
+            "rating":9.6,
+            "release_date":"27 May 2022",
+            "review":"Sangat seru dan alur ceritanya sangat bagus"
+        }
+    },
+    {
+        "model":"mywatchlist.watchlist",
+        "pk":2,
+        "fields":{
+            "watched":"Yes",
+            "title":"Spider-Man: No Way Home",
+            "rating":9.3,
+            "release_date":"17 December 2021",
+            "review":"Seru dan cukup menegangkan"
+        }
+    },
+    {
+        "model":"mywatchlist.watchlist",
+        "pk":3,
+        "fields":{
+            "watched":"No",
+            "title":"F9: The Fast Saga",
+            "rating":5.9,
+            "release_date":"25 June 2021",
+            "review":"-"
+        }
+    },
+    {
+        "model":"mywatchlist.watchlist",
+        "pk":4,
+        "fields":{
+            "watched":"Yes",
+            "title":"Jumanji: The Next Level",
+            "rating":7.1,
+            "release_date":"13 December 2019",
+            "review":"Seperti benar-benar masuk ke dalam game dan ada sisipan komedi"
+        }
+    },
+    {
+        "model":"mywatchlist.watchlist",
+        "pk":5,
+        "fields":{
+            "watched":"No",
+            "title":"Birds of Prey",
+            "rating":7.9,
+            "release_date":"07 February 2020",
+            "review":"-"
+        }
+    },
+    {
+        "model":"mywatchlist.watchlist",
+        "pk":6,
+        "fields":{
+            "watched":"Yes",
+            "title":"Ralph Breaks the Internet",
+            "rating":8.8,
+            "release_date":"21 November 2018",
+            "review":"-"
+        }
+    },
+    {
+        "model":"mywatchlist.watchlist",
+        "pk":7,
+        "fields":{
+            "watched":"Yes",
+            "title":"Parasite",
+            "rating":9.9,
+            "release_date":"30 May 2019",
+            "review":"Masalah yang diangkat relatable dengan keadaan nyata, yaitu terdapat kesenjangan sosial"
+        }
+    },
+    {
+        "model":"mywatchlist.watchlist",
+        "pk":8,
+        "fields":{
+            "watched":"No",
+            "title":"Star Wars: The Last Jedi",
+            "rating":9.1,
+            "release_date":"15 December 2017",
+            "review":"-"
+        }
+    },
+    {
+        "model":"mywatchlist.watchlist",
+        "pk":9,
+        "fields":{
+            "watched":"Yes",
+            "title":"Five Feet Apart",
+            "rating":5.3,
+            "release_date":"15 March 2019",
+            "review":"Alur dan akhir cerita cukup menyedihkan"
+        }
+    },
+    {
+        "model":"mywatchlist.watchlist",
+        "pk":10,
+        "fields":{
+            "watched":"Yes",
+            "title":"Despicable Me 3",
+            "rating":5.9,
+            "release_date":"30 June 2017",
+            "review":"Filmnya lucu"
+        }
+    }
+]
