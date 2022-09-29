@@ -63,6 +63,6 @@ Kemudian, pada urls.py saya menambahkan import dari todolist.views berupa create
     path('logout/', logout_user, name='logout'),
     ]
 
-Lalu, saya menambahkan fitur tombol delete. Pada views.py, saya membuat fungsi delete yang menerima parameter request dan id. Saya juga menambahkan import delete pada urls.py dan mendaftarkan path delete. Saya juga membuat file HTML baru yaitu delete.HTML sebagai format tampilan jika fungsi delete dipanggil.
+Lalu, saya menambahkan fitur tombol delete. Pada views.py, saya membuat fungsi delete yang menerima parameter request dan id. Saya juga menambahkan import delete pada urls.py dan mendaftarkan path delete. Saya juga membuat file HTML baru yaitu delete.html sebagai format tampilan jika fungsi delete dipanggil.
 
 Selanjutnya, saya melakukan push ke GitHub dan secara otomatis aplikasi Heroku ter-deploy dan aplikasi dapat diakses melalui *link* yang ada pada *section* [Link Heroku App](https://github.com/elsagiana/django-assignment/tree/main/todolist#link-heroku-app).
