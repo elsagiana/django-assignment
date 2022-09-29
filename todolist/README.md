@@ -54,6 +54,7 @@ Selanjutnya, saya membuat folder templates di todolist. Kemudian, saya membuat t
     	path('', show_todolist, name='show_todolist'),
 	]
 Kemudian, pada urls.py saya menambahkan import dari todolist.views berupa create_task, register, login_user, logout_user. Saya juga mendaftarkan path pada urlpatterns sebagai berikut.
+    
     urlpatterns = [
     path('', show_todolist, name='show_todolist'),
     path('create-task/', create_task, name='create_task'),
