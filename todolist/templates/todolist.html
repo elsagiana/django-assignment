@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Welcome to ToDoList, {{user}}</h1>
+
+  <h3>My ToDoList</h3>
+
+  <button><a href="{% url 'todolist:create_task' %}">Tambah Task Baru</a></button>
+  
+  <table>
+    <tr>
+      <th>Title</th>
+      <th>Date Created</th>
+      <th>Description</th>
+      <th>Status</th>
+      <th>Delete</th>
+    </tr>
+    {% comment %} Add the data below this line {% endcomment %}
+    {% for task in data_todolist %}
+        <tr>
+            <th>{{task.title}}</th>
+            <th>{{task.date}}</th>
+            <th>{{task.description}}</th>
+            {% if task.is_finished == False %}
+            <th>Belum Selesai</th>
+            {% else %}
+            <th>Selesai</th>
+            {% endif %}
+            <th><button><a href="{% url 'todolist:delete' task.id %}">Delete</a></button></th>
+        </tr>
+    {% endfor %}    
+  </table>
+</div>
+
+  <button><a href="{% url 'todolist:logout' %}">Logout</a></button>
+
+ {% endblock content %}

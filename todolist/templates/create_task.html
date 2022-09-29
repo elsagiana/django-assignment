@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block meta %}
+<title>Tambah Task Baru</title>
+{% endblock meta %}
+
+{% load static %}
+
+{% block content %}
+<div class = "task">
+
+    <center>
+        
+    <h1>Tambah Task Baru</h1>
+
+    <form method="POST" action="">
+        {% csrf_token %}
+        <table>
+            {{ form }}
+        </table>
+        <td><input type="submit" value="Tambah"></td>
+    </form>
+
+    <button><a href="{% url 'todolist:show_todolist' %}">Kembali</a></button>
+
+    </center>
+
+</div>
+
+{% endblock content %}
