@@ -1,3 +1,8 @@
+[README Tugas 4](https://github.com/elsagiana/django-assignment/tree/main/todolist#readme-tugas-4)
+
+[README Tugas 5](https://github.com/elsagiana/django-assignment/tree/main/todolist#readme-tugas-5)
+
+# Tugas 4
 ## Link Heroku App
 
 Link aplikasi Django yang sudah di-deploy ke Heroku: [https://django-assignment-elsa.herokuapp.com/todolist/](https://django-assignment-elsa.herokuapp.com/todolist/)
@@ -66,3 +71,84 @@ Kemudian, pada urls.py saya menambahkan import dari todolist.views berupa create
 Lalu, saya menambahkan fitur tombol delete. Pada views.py, saya membuat fungsi delete yang menerima parameter request dan id. Saya juga menambahkan import delete pada urls.py dan mendaftarkan path delete. Saya juga membuat file HTML baru yaitu delete.html sebagai format tampilan jika fungsi delete dipanggil.
 
 Selanjutnya, saya melakukan push ke GitHub dan secara otomatis aplikasi Heroku ter-deploy dan aplikasi dapat diakses melalui *link* yang ada pada *section* [Link Heroku App](https://github.com/elsagiana/django-assignment/tree/main/todolist#link-heroku-app).
+
+# Tugas 5
+## Perbedaan Inline, Internal, dan External CSS beserta Kelebihan dan Kekurangan Masing-Masing
+
+**Inline**
+
+Perbedaan:
+Inline CSS langsung menuliskan CSS pada tag atribut yang ingin diberikan style.
+
+Kelebihan:
+
+Mudah untuk memberikan style.
+
+Kekurangan:
+
+Lebih sulit untuk melakukan perubahan karena perlu di-trace satu per satu.
+
+**Internal**
+
+Perbedaan:
+
+Internal CSS menuliskan kode CSS langsung pada file HTML yang ingin diberikan style namun tidak pada tag-nya. CSS ditulis pada bagian head.
+
+Kelebihan: 
+
+Dapat mendesain spesifik untuk satu file HTML dan dapat menggunakan ID dan class secara langsung untuk membuat style.
+
+Kekurangan:
+
+File HTML menjadi panjang sehingga membutuhkan waktu untuk loading.
+
+**External**
+
+Perbedaan:
+
+External CSS menggunakan file CSS terpisah dengan file HTML. Style ditulis pada file CSS tersebut dan file tersebut akan diimport ke file HTML.
+
+Kelebihan:
+
+File HTML lebih clear dan style dapat dipakai berulang. Selain itu, untuk melakukan perubahan lebih mudah.
+
+Kekurangan:
+
+Meningkatkan waktu download dan hasil render file HTML menunggu file CSS ter-load sempurna.
+
+## Tag HTML5
+
+1. `<a>` merupakan tag untuk hyperlink
+2. `<body>` merupakan tag untuk mendefinisikan body dokumen
+3. `<button>` merupakan tag untuk membuat button
+4. `<div>` merupakan tag untuk mendefinisikan section dari dokumen
+5. `<form>` merupakan tag untuk mendefinisikan form untuk input user
+6. `<p>` merupakan tag untuk mendefinisikan paragraf
+
+## Tipe-Tipe CSS Selector
+
+1. `.class` untuk selector suatu class
+2. `#id` untuk selector id tertentu
+3. `element` untuk selector dari suatu elemen, contoh body, etc.
+
+## Cara Implementasi
+
+1. Pertama saya menambahkan kode berikut pada kelima file HTML pada app todolist.
+
+    `<!doctype html>`
+    `<html lang="en">`
+    `<head>`
+    `<meta charset="utf-8">`
+    `<meta name="viewport" content="width=device-width, initial-scale=1">`
+    `<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">`
+
+    `<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>`
+    
+2. Lalu saya menambahkan font style
+
+    `<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">`
+
+3. Saya melakukan styling pada file HTML dengan memanfaatkan bootstrap
+4. Saya juga menambahkan Navbar pada file todolist.html
+5. Saya juga menambahkan media query pada setiap file
+6. Melakukan deployment ke Heroku dengan push ke GitHub
