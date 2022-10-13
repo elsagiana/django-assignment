@@ -1,9 +1,12 @@
+from datetime import datetime
 from django.shortcuts import render, redirect
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from django.contrib.auth.models import User
+from django.http import HttpResponse, HttpRequest
+from django.core import serializers
 from todolist.models import Task
 from todolist.forms import TaskForm
 
@@ -72,3 +75,29 @@ def login_user(request):
 def logout_user(request):
     logout(request)
     return redirect('todolist:login')
+
+def todolist_json(request):
+    data_todolist = Task.objects.filter(user=request.user).all()
+    return HttpResponse(serializers.serialize("json", data_todolist), content_type="application/json")
+
+@login_required(login_url='/todolist/login/')
+def show_todolist_ajax(request):
+    user = request.user
+    context = {
+        'user':user
+    }
+    return render(request, "todolist_ajax.html", context)
+
+@login_required(login_url='/todolist/login/')
+def add_task_ajax(request: HttpRequest):
+    if request.method == "POST":
+        title = request.POST.get('title')
+        description = request.POST.get('description')
+        new_task =  Task(
+            title = title,
+            description = description,
+            user = request.user,
+            date = datetime.now(),
+        )
+        new_task.save()
+        return HttpResponse(serializers.serialize("json", [new_task]), content_type='application/json')
