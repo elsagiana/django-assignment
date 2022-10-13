@@ -1,6 +1,6 @@
-[README Tugas 4](https://github.com/elsagiana/django-assignment/tree/main/todolist#readme-tugas-4)
+[README Tugas 4](https://github.com/elsagiana/django-assignment/tree/main/todolist#tugas-4)
 
-[README Tugas 5](https://github.com/elsagiana/django-assignment/tree/main/todolist#readme-tugas-5)
+[README Tugas 5](https://github.com/elsagiana/django-assignment/tree/main/todolist#tugas-5)
 
 # Tugas 4
 ## Link Heroku App
@@ -78,6 +78,7 @@ Selanjutnya, saya melakukan push ke GitHub dan secara otomatis aplikasi Heroku t
 **Inline**
 
 Perbedaan:
+
 Inline CSS langsung menuliskan CSS pada tag atribut yang ingin diberikan style.
 
 Kelebihan:
@@ -143,7 +144,7 @@ Meningkatkan waktu download dan hasil render file HTML menunggu file CSS ter-loa
     `<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">`
 
     `<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>`
-    
+
 2. Lalu saya menambahkan font style
 
     `<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">`
